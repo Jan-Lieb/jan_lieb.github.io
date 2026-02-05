@@ -135,5 +135,119 @@
     <!-- Replace profile.jpg with your actual image file -->
     <img src="profile.jpg" alt="Profile Photo">
   </section>
+
+
+  <!-- NEUER BEREICH: Featured Projects -->
+  <section class="featured-projects">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <div class="projects-grid">
+      
+      <!-- Projekt 1: Hautkrebs -->
+      <a href="projects/skin_cancer.html" class="project-card">
+        <div class="card-image" style="background-image: url('project1.jpg');"></div>
+        <div class="card-content">
+          <h3>Hautkrebserkennung</h3>
+          <p>Klassifikation mit CNNs und Transfer Learning</p>
+        </div>
+      </a>
+
+      <!-- Projekt 2: Energiewende -->
+      <a href="projects/energy.html" class="project-card">
+        <div class="card-image" style="background-image: url('project2.png');"></div>
+        <div class="card-content">
+          <h3>Energiewende</h3>
+          <p>Was heutige Zahlen über die Stromversorgung von Morgen aussagen</p>
+        </div>
+      </a>
+
+      <!-- Projekt 3: Platzhalter (Bike/Strava?) -->
+      <a href="#" class="project-card">
+        <div class="card-image" style="background-image: url('project3.jpg');"></div>
+        <div class="card-content">
+          <h3>Radsport Datenanalyse</h3>
+          <p>Analyse von 160km Touren und Trainingsdaten</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- STYLES DAFÜR (Am besten oben in den <style> Block kopieren, geht aber auch hier) -->
+  <style>
+    .featured-projects {
+      max-width: 1100px;
+      margin: 60px auto 100px auto; /* Abstand nach oben und unten */
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: #111;
+      text-align: center; /* Überschrift zentriert */
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px; /* Schön abgerundet */
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card-image {
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      background-color: #e0e7ff; /* Fallback Farbe falls kein Bild da ist */
+    }
+
+    .card-content {
+      padding: 24px;
+      flex-grow: 1; /* Damit alle Karten gleich hoch wirken */
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #2563eb; /* Blaue Überschrift passend zum Theme */
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Mobile Optimierung */
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr; /* Untereinander auf Handy */
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+
+  
 </body>
 </html>
