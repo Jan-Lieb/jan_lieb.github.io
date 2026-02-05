@@ -1,2 +1,143 @@
 # jan_lieb.github.io
 A portfolio of my work to showcase my interests, abilities and motivation as an aspiring data scientist. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harrison Jansma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 60px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .resume-btn {
+      border: 1px solid #2563eb;
+      padding: 6px 14px;
+      border-radius: 20px;
+      color: #2563eb;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 100px;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h1 {
+      font-size: 44px;
+      margin: 10px 0;
+    }
+
+    .hero-text p {
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #1e4fd6;
+    }
+
+    .hero img {
+      width: 320px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      nav a {
+        margin-left: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">H. Jansma</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Blog</a>
+      <a href="#" class="resume-btn">Resume</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <div>I am</div>
+      <h1>Harrison Jansma</h1>
+      <p>Contemplative coder and analyst. Inspired by tough problems.</p>
+      <a href="#" class="btn">My Projects</a>
+    </div>
+
+    <!-- Replace profile.jpg with your actual image file -->
+    <img src="profile.jpg" alt="Profile Photo">
+  </section>
+</body>
+</html>
